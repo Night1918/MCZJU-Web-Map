@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#mapf1 {
+    position: relative;
+    z-index: 1;
+}
+#mapf2 {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transform: translate(-275px, -63px);
+}
+#mapf3 {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    transform: translate(-275px, -63px);
+}
+.area-button {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    background: transparent;
+    border-width: 0px;
+    outline: none;
+    font-size: 60px;
+    color: yellow;
+    transform: translate(-80px, -40px);
+}
+.area-button-expanded {
+    width: 300px;
+    height: 150px;
+    font-size: 30px;
+    transform: translate(-150px, -75px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#button-e01 {
+    top: 1186px;
+    left: 4065px;
+}
+#button-e02 {
+    top: 1167px;
+    left: 4545.5px;
+}

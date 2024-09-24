@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCZJU Web Map</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="map">
+        <div id="mapf1">
+            <img src="background.png">
+        </div>
+        <div id="mapf2">
+            <canvas id="area" width="6379" height="4762"></canvas>
+            <script>
+                var canvas = document.getElementById("area");
+                var context = canvas.getContext("2d");
+                //e01
+                context.beginPath();
+                context.moveTo(3795, 1067);
+                context.lineTo(3891, 1009);
+                context.lineTo(4259, 945);
+                context.lineTo(4335, 1367);
+                context.lineTo(3855, 1427);
+                context.closePath();
+                context.fillStyle = "rgba(255, 86, 255, 0.5)";
+                context.strokeStyle = "rgba(255, 86, 255, 0.5)";
+                context.fill();
+                context.stroke();
+                //e02
+                context.beginPath();
+                context.moveTo(4325, 1046);
+                context.lineTo(4710, 980);
+                context.lineTo(4766, 1289);
+                context.lineTo(4385, 1354);
+                context.closePath();
+                context.fillStyle = "rgba(255, 86, 86, 0.5)";
+                context.strokeStyle = "rgba(255, 86, 86, 0.5)";
+                context.fill();
+                context.stroke();
+            </script>
+        </div>
+        <div id="mapf3">
+            <button id="button-e01" class="area-button">E-1</button>
+            <button id="button-e02" class="area-button">E-2</button>
+            <script>
+                document.getElementById("button-e01").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-1<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-1";
+                    }
+                });
+                document.getElementById("button-e02").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-2<br>承建人:yyy<br>完成度:yy%";
+                    } else {
+                        this.innerHTML = "E-2";
+                    }
+                });
+            </script>
+        </div>
+    </div>
+    <div id="map-control"></div>
+</body>
+</html>
