@@ -67,7 +67,7 @@ body {
     border-width: 0px;
     border-radius: 5px;
     outline: none;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     background-color: #3498db;
 }
@@ -78,4 +78,41 @@ body {
 #button-zoom-out {
     right: 5px;
     bottom: 5px;
+}
+#map-example-box {
+    position: fixed;
+    width: auto;
+    height: auto;
+    left: 5px;
+    bottom: 5px;
+    border-width: 0px;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    background-color: rgb(128, 128, 128);
+}
+.map-example-detail {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.map-example-color {
+    width: 20px;
+    height: 20px;
+}
+#map-example-color-a {
+    background-color: red;
+}
+#map-example-color-b {
+    background-color: orange;
+}
+#map-example-color-c {
+    background-color: yellow;
+}
+#map-example-color-d {
+    background-color: lawngreen;
+}
+#map-example-color-e {
+    background-color: magenta;
 }

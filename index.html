@@ -77,10 +77,32 @@
         </div>
     </div>
     <div id="map-control">
+        <div id="map-example-box">
+            <div id="map-example-detail-a" class="map-example-detail">
+                <a id="map-example-color-a" class="map-example-color">&emsp;&emsp;</a>
+                <a id="map-example-content-a" class="map-example-content">无人认领</a>
+            </div>
+            <div id="map-example-detail-b" class="map-example-detail">
+                <a id="map-example-color-b" class="map-example-color">&emsp;&emsp;</a>
+                <a id="map-example-content-b" class="map-example-content">几乎未开工</a>
+            </div>
+            <div id="map-example-detail-c" class="map-example-detail">
+                <a id="map-example-color-c" class="map-example-color">&emsp;&emsp;</a>
+                <a id="map-example-content-c" class="map-example-content">已建造部分</a>
+            </div>
+            <div id="map-example-detail-d" class="map-example-detail">
+                <a id="map-example-color-d" class="map-example-color">&emsp;&emsp;</a>
+                <a id="map-example-content-d" class="map-example-content">已基本完成</a>
+            </div>
+            <div id="map-example-detail-e" class="map-example-detail">
+                <a id="map-example-color-e" class="map-example-color">&emsp;&emsp;</a>
+                <a id="map-example-content-e" class="map-example-content">旧世界待迁移</a>
+            </div>
+        </div>
         <button id="button-zoom-in" class="control-button" title="放大">+</button>
         <button id="button-zoom-out" class="control-button" title="缩小">-</button>
         <script>
-            let scale = 1;
+            let scale = 0.3;
             const zoomInButton = document.getElementById('button-zoom-in');
             const zoomOutButton = document.getElementById('button-zoom-out');
             const mapElement = document.getElementById('map');
@@ -101,6 +123,7 @@
                 zoomMap(-0.1);
             });
             updateTransformOrigin();
+            mapElement.style.transform = `scale(${scale})`;
         </script>
     </div>
 </body>
