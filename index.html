@@ -108,6 +108,30 @@
             });
             updateTransformOrigin();
         </script>
+        <script>
+            const map = document.getElementById('map');
+            let isDragging = false;
+            let offsetX, offsetY;
+            document.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                offsetX = e.clientX - map.getBoundingClientRect().left;
+                offsetY = e.clientY - map.getBoundingClientRect().top;
+            });
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    const targetElement = document.elementFromPoint(e.clientX, e.clientY);
+                    if (targetElement && targetElement.tagName === 'BUTTON') {
+                        return;
+                    }
+                    map.style.left = e.clientX - offsetX + 'px';
+                    map.style.top = e.clientY - offsetY + 'px';
+                }
+            });
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+        </script>
     </div>
 </body>
 </html>

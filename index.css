@@ -4,6 +4,9 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+#map {
+    position: absolute;
+}
 #mapf1 {
     position: relative;
     z-index: 1;
