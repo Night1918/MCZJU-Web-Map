@@ -17,7 +17,7 @@ body {
     z-index: 2;
     top: 0;
     left: 0;
-    transform: translate(-275px, -63px);
+    transform: translate(1460px, 820px);
 }
 #mapf3 {
     position: absolute;
@@ -28,14 +28,14 @@ body {
 }
 .area-button {
     position: absolute;
-    width: 160px;
-    height: 80px;
+    width: 250px;
+    height: 100px;
     background: transparent;
     border-width: 0px;
     outline: none;
-    font-size: 60px;
+    font-size: 90px;
     color: yellow;
-    transform: translate(-80px, -40px);
+    transform: translate(-100px, -50px);
 }
 .area-button-expanded {
     width: 300px;
@@ -51,6 +51,198 @@ body {
 #button-e02 {
     top: 1167px;
     left: 4545.5px;
+}
+#button-e03 {
+    top: 1083px;
+    left: 5025px;
+}
+#button-e04 {
+    top: 1513px;
+    left: 4107px;
+}
+#button-e05 {
+    top: 1495px;
+    left: 4587px;
+}
+#button-e06 {
+    top: 1405px;
+    left: 5019px;
+}
+#button-e07 {
+    top: 1771px;
+    left: 4149px;
+}
+#button-e08 {
+    top: 2154px;
+    left: 4203px;
+}
+#button-e09 {
+    top: 1809px;
+    left: 4641px;
+}
+#button-e10 {
+    top: 1741px;
+    left: 5031px;
+}
+#button-e11 {
+    top: 1483px;
+    left: 5576px;
+}
+#button-e12 {
+    top: 1927px;
+    left: 5642px;
+}
+#button-e13 {
+    top: 2232px;
+    left: 4917px;
+}
+#button-e14 {
+    top: 2784px;
+    left: 4209px;
+}
+#button-e15 {
+    top: 2832px;
+    left: 4779px;
+}
+#button-e16 {
+    top: 3461px;
+    left: 4245px;
+}
+#button-e17 {
+    top: 3575px;
+    left: 4743px;
+}
+#button-e18 {
+    top: 3113px;
+    left: 5085px;
+}
+#button-e19 {
+    top: 2418px;
+    left: 5312px;
+}
+#button-e20 {
+    top: 2352px;
+    left: 5702px;
+}
+#button-e21 {
+    top: 3108px;
+    left: 5480px;
+}
+#button-e22 {
+    top: 2987px;
+    left: 5870px;
+}
+#button-e23 {
+    top: 3713px;
+    left: 5354px;
+}
+#button-e24 {
+    top: 3755px;
+    left: 5828px;
+}
+#button-e25 {
+    top: 4126px;
+    left: 4592px;
+}
+#button-e26 {
+    top: 4102px;
+    left: 5354px;
+}
+#button-w01 {
+    top: 1357px;
+    left: 3615px;
+}
+#button-w02 {
+    top: 1561px;
+    left: 3333px;
+}
+#button-w03 {
+    top: 1669px;
+    left: 2979px;
+}
+#button-w04 {
+    top: 1885px;
+    left: 2613px;
+}
+#button-w05 {
+    top: 2112px;
+    left: 2097px;
+}
+#button-w06 {
+    top: 2682px;
+    left: 2115px;
+}
+#button-w07 {
+    top: 2430px;
+    left: 2541px;
+}
+#button-w08 {
+    top: 2220px;
+    left: 2799px;
+}
+#button-w09 {
+    top: 2076px;
+    left: 3165px;
+}
+#button-w10 {
+    top: 1956px;
+    left: 3603px;
+}
+#button-w11 {
+    top: 2400px;
+    left: 3171px;
+}
+#button-w12 {
+    top: 2820px;
+    left: 2907px;
+}
+#button-w13 {
+    top: 2634px;
+    left: 3285px;
+}
+#button-w14 {
+    top: 2610px;
+    left: 3765px;
+}
+#button-w15 {
+    top: 3329px;
+    left: 2109px;
+}
+#button-w16 {
+    top: 3389px;
+    left: 2649px;
+}
+#button-w17 {
+    top: 3311px;
+    left: 2967px;
+}
+#button-w18 {
+    top: 3149px;
+    left: 3519px;
+}
+#button-w19 {
+    top: 3761px;
+    left: 2103px;
+}
+#button-w20 {
+    top: 3767px;
+    left: 2433px;
+}
+#button-w21 {
+    top: 4006px;
+    left: 2901px;
+}
+#button-w22 {
+    top: 3695px;
+    left: 3579px;
+}
+#button-w23 {
+    top: 4093px;
+    left: 3537px;
+}
+#button-w24 {
+    top: 4162px;
+    left: 4041px;
 }
 #map-control {
     position: absolute;
@@ -89,7 +281,7 @@ body {
     border-radius: 5px;
     outline: none;
     color: white;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(128, 128, 128, 0.8);
 }
 .map-example-detail {
     margin-top: 5px;

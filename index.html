@@ -24,38 +24,59 @@
             <img src="background.png" draggable="false">
         </div>
         <div id="mapf2">
-            <canvas id="area" width="6379" height="4762"></canvas>
-            <script>
-                var canvas = document.getElementById("area");
-                var context = canvas.getContext("2d");
-                //e01
-                context.beginPath();
-                context.moveTo(3795, 1067);
-                context.lineTo(3891, 1009);
-                context.lineTo(4259, 945);
-                context.lineTo(4335, 1367);
-                context.lineTo(3855, 1427);
-                context.closePath();
-                context.fillStyle = "rgba(255, 86, 255, 0.5)";
-                context.strokeStyle = "rgba(255, 86, 255, 0.5)";
-                context.fill();
-                context.stroke();
-                //e02
-                context.beginPath();
-                context.moveTo(4325, 1046);
-                context.lineTo(4710, 980);
-                context.lineTo(4766, 1289);
-                context.lineTo(4385, 1354);
-                context.closePath();
-                context.fillStyle = "rgba(255, 86, 86, 0.5)";
-                context.strokeStyle = "rgba(255, 86, 86, 0.5)";
-                context.fill();
-                context.stroke();
-            </script>
+            <img src="areas.png" draggable="false">
         </div>
         <div id="mapf3">
             <button id="button-e01" class="area-button">E-1</button>
             <button id="button-e02" class="area-button">E-2</button>
+            <button id="button-e03" class="area-button">E-3</button>
+            <button id="button-e04" class="area-button">E-4</button>
+            <button id="button-e05" class="area-button">E-5</button>
+            <button id="button-e06" class="area-button">E-6</button>
+            <button id="button-e07" class="area-button">E-7</button>
+            <button id="button-e08" class="area-button">E-8</button>
+            <button id="button-e09" class="area-button">E-9</button>
+            <button id="button-e10" class="area-button">E-10</button>
+            <button id="button-e11" class="area-button">E-11</button>
+            <button id="button-e12" class="area-button">E-12</button>
+            <button id="button-e13" class="area-button">E-13</button>
+            <button id="button-e14" class="area-button">E-14</button>
+            <button id="button-e15" class="area-button">E-15</button>
+            <button id="button-e16" class="area-button">E-16</button>
+            <button id="button-e17" class="area-button">E-17</button>
+            <button id="button-e18" class="area-button">E-18</button>
+            <button id="button-e19" class="area-button">E-19</button>
+            <button id="button-e20" class="area-button">E-20</button>
+            <button id="button-e21" class="area-button">E-21</button>
+            <button id="button-e22" class="area-button">E-22</button>
+            <button id="button-e23" class="area-button">E-23</button>
+            <button id="button-e24" class="area-button">E-24</button>
+            <button id="button-e25" class="area-button">E-25</button>
+            <button id="button-e26" class="area-button">E-26</button>
+            <button id="button-w01" class="area-button">W-1</button>
+            <button id="button-w02" class="area-button">W-2</button>
+            <button id="button-w03" class="area-button">W-3</button>
+            <button id="button-w04" class="area-button">W-4</button>
+            <button id="button-w05" class="area-button">W-5</button>
+            <button id="button-w06" class="area-button">W-6</button>
+            <button id="button-w07" class="area-button">W-7</button>
+            <button id="button-w08" class="area-button">W-8</button>
+            <button id="button-w09" class="area-button">W-9</button>
+            <button id="button-w10" class="area-button">W-10</button>
+            <button id="button-w11" class="area-button">W-11</button>
+            <button id="button-w12" class="area-button">W-12</button>
+            <button id="button-w13" class="area-button">W-13</button>
+            <button id="button-w14" class="area-button">W-14</button>
+            <button id="button-w15" class="area-button">W-15</button>
+            <button id="button-w16" class="area-button">W-16</button>
+            <button id="button-w17" class="area-button">W-17</button>
+            <button id="button-w18" class="area-button">W-18</button>
+            <button id="button-w19" class="area-button">W-19</button>
+            <button id="button-w20" class="area-button">W-20</button>
+            <button id="button-w21" class="area-button">W-21</button>
+            <button id="button-w22" class="area-button">W-22</button>
+            <button id="button-w23" class="area-button">W-23</button>
+            <button id="button-w24" class="area-button">W-24</button>
             <script>
                 document.getElementById("button-e01").addEventListener("click", function() {
                     this.classList.toggle("area-button-expanded");
@@ -68,9 +89,393 @@
                 document.getElementById("button-e02").addEventListener("click", function() {
                     this.classList.toggle("area-button-expanded");
                     if (this.classList.contains("area-button-expanded")) {
-                        this.innerHTML = "E-2<br>承建人:yyy<br>完成度:yy%";
+                        this.innerHTML = "E-2<br>承建人:xxx<br>完成度:xx%";
                     } else {
                         this.innerHTML = "E-2";
+                    }
+                });
+                document.getElementById("button-e03").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-3<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-3";
+                    }
+                });
+                document.getElementById("button-e04").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-4<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-4";
+                    }
+                });
+                document.getElementById("button-e05").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-5<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-5";
+                    }
+                });
+                document.getElementById("button-e06").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-6<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-6";
+                    }
+                });
+                document.getElementById("button-e07").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-7<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-7";
+                    }
+                });
+                document.getElementById("button-e08").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-8<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-8";
+                    }
+                });
+                document.getElementById("button-e09").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-9<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-9";
+                    }
+                });
+                document.getElementById("button-e10").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-10<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-10";
+                    }
+                });
+                document.getElementById("button-e11").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-11<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-11";
+                    }
+                });
+                document.getElementById("button-e12").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-12<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-12";
+                    }
+                });
+                document.getElementById("button-e13").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-13<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-13";
+                    }
+                });
+                document.getElementById("button-e14").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-14<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-14";
+                    }
+                });
+                document.getElementById("button-e15").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-15<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-15";
+                    }
+                });
+                document.getElementById("button-e16").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-16<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-16";
+                    }
+                });
+                document.getElementById("button-e17").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-17<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-17";
+                    }
+                });
+                document.getElementById("button-e18").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-18<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-18";
+                    }
+                });
+                document.getElementById("button-e19").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-19<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-19";
+                    }
+                });
+                document.getElementById("button-e20").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-20<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-20";
+                    }
+                });
+                document.getElementById("button-e21").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-21<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-21";
+                    }
+                });
+                document.getElementById("button-e22").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-22<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-22";
+                    }
+                });
+                document.getElementById("button-e23").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-23<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-23";
+                    }
+                });
+                document.getElementById("button-e24").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-24<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-24";
+                    }
+                });
+                document.getElementById("button-e25").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-25<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-25";
+                    }
+                });
+                document.getElementById("button-e26").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "E-26<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "E-26";
+                    }
+                });
+                document.getElementById("button-w01").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-1<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-1";
+                    }
+                });
+                document.getElementById("button-w02").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-2<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-2";
+                    }
+                });
+                document.getElementById("button-w03").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-3<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-3";
+                    }
+                });
+                document.getElementById("button-w04").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-4<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-4";
+                    }
+                });
+                document.getElementById("button-w05").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-5<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-5";
+                    }
+                });
+                document.getElementById("button-w06").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-6<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-6";
+                    }
+                });
+                document.getElementById("button-w07").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-7<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-7";
+                    }
+                });
+                document.getElementById("button-w08").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-8<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-8";
+                    }
+                });
+                document.getElementById("button-w09").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-9<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-9";
+                    }
+                });
+                document.getElementById("button-w10").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-10<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-10";
+                    }
+                });
+                document.getElementById("button-w11").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-11<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-11";
+                    }
+                });
+                document.getElementById("button-w12").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-12<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-12";
+                    }
+                });
+                document.getElementById("button-w13").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-13<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-13";
+                    }
+                });
+                document.getElementById("button-w14").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-14<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-14";
+                    }
+                });
+                document.getElementById("button-w15").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-15<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-15";
+                    }
+                });
+                document.getElementById("button-w16").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-16<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-16";
+                    }
+                });
+                document.getElementById("button-w17").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-17<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-17";
+                    }
+                });
+                document.getElementById("button-w18").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-18<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-18";
+                    }
+                });
+                document.getElementById("button-w19").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-19<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-19";
+                    }
+                });
+                document.getElementById("button-w20").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-20<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-20";
+                    }
+                });
+                document.getElementById("button-w21").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-21<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-21";
+                    }
+                });
+                document.getElementById("button-w22").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-22<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-22";
+                    }
+                });
+                document.getElementById("button-w23").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-23<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-23";
+                    }
+                });
+                document.getElementById("button-w24").addEventListener("click", function() {
+                    this.classList.toggle("area-button-expanded");
+                    if (this.classList.contains("area-button-expanded")) {
+                        this.innerHTML = "W-24<br>承建人:xxx<br>完成度:xx%";
+                    } else {
+                        this.innerHTML = "W-24";
                     }
                 });
             </script>
@@ -102,7 +507,7 @@
         <button id="button-zoom-in" class="control-button" title="放大">+</button>
         <button id="button-zoom-out" class="control-button" title="缩小">-</button>
         <script>
-            let scale = 0.3;
+            let scale = 0.6;
             const zoomInButton = document.getElementById('button-zoom-in');
             const zoomOutButton = document.getElementById('button-zoom-out');
             const mapElement = document.getElementById('map');
@@ -112,15 +517,15 @@
                 mapElement.style.transformOrigin = `${screenWidth / 2}px ${screenHeight / 2}px`;
             }
             function zoomMap(delta) {
-                scale = Math.min(Math.max(0.1, scale + delta), 3);
+                scale = Math.min(Math.max(0.15, scale + delta), 3);
                 updateTransformOrigin();
                 mapElement.style.transform = `scale(${scale})`;
             }
             zoomInButton.addEventListener('click', () => {
-                zoomMap(0.1);
+                zoomMap(0.05);
             });
             zoomOutButton.addEventListener('click', () => {
-                zoomMap(-0.1);
+                zoomMap(-0.05);
             });
             updateTransformOrigin();
             mapElement.style.transform = `scale(${scale})`;
