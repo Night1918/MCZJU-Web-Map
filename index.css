@@ -308,3 +308,8 @@ body {
 #map-example-color-e {
     background-color: magenta;
 }
+.github-button{
+    position: fixed;
+    right: 5px;
+    top: 5px;
+}
